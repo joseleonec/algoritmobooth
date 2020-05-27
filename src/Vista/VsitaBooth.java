@@ -59,7 +59,7 @@ public class VsitaBooth extends javax.swing.JFrame {
         setFocusCycleRoot(false);
         setName("ventanaPrincipal"); // NOI18N
 
-        panelFondo.setBackground(new java.awt.Color(0, 0, 0));
+        panelFondo.setBackground(new java.awt.Color(0, 51, 51));
 
         txtTitle.setFont(new java.awt.Font("Source Code Pro", 1, 24)); // NOI18N
         txtTitle.setForeground(new java.awt.Color(255, 255, 255));
@@ -81,27 +81,27 @@ public class VsitaBooth extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Cantidad de Bits:");
 
-        radioBtn.setBackground(new java.awt.Color(0, 0, 0));
+        radioBtn.setBackground(new java.awt.Color(0, 51, 51));
         radioBtn.setFont(new java.awt.Font("Source Code Pro Black", 0, 14)); // NOI18N
         radioBtn.setForeground(new java.awt.Color(255, 255, 255));
         radioBtn.setSelected(true);
         radioBtn.setText("Desplegar todo");
 
-        radioBtnStepbyStep.setBackground(new java.awt.Color(0, 0, 0));
+        radioBtnStepbyStep.setBackground(new java.awt.Color(0, 51, 51));
         radioBtnStepbyStep.setFont(new java.awt.Font("Source Code Pro Black", 0, 14)); // NOI18N
         radioBtnStepbyStep.setForeground(new java.awt.Color(255, 255, 255));
         radioBtnStepbyStep.setText("Paso a Paso");
 
-        btnIniciar.setBackground(new java.awt.Color(51, 204, 0));
+        btnIniciar.setBackground(new java.awt.Color(51, 255, 51));
         btnIniciar.setFont(new java.awt.Font("Source Code Pro", 1, 14)); // NOI18N
         btnIniciar.setText("Iniciar");
 
-        btnAtras.setBackground(new java.awt.Color(204, 255, 255));
-        btnAtras.setFont(new java.awt.Font("Source Code Pro", 1, 18)); // NOI18N
+        btnAtras.setBackground(new java.awt.Color(255, 153, 153));
+        btnAtras.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         btnAtras.setText("<<");
 
-        btnAdelante.setBackground(new java.awt.Color(204, 255, 255));
-        btnAdelante.setFont(new java.awt.Font("Source Code Pro", 1, 18)); // NOI18N
+        btnAdelante.setBackground(new java.awt.Color(255, 153, 153));
+        btnAdelante.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         btnAdelante.setText(">>");
 
         tablaProceso.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -170,7 +170,7 @@ public class VsitaBooth extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("ITERACIÓN:");
 
-        campoNumBits1.setModel(new javax.swing.SpinnerNumberModel(8, 1, 32, 1));
+        campoNumBits1.setModel(new javax.swing.SpinnerNumberModel(8, 1, 20, 1));
 
         javax.swing.GroupLayout panelFondoLayout = new javax.swing.GroupLayout(panelFondo);
         panelFondo.setLayout(panelFondoLayout);
@@ -198,22 +198,19 @@ public class VsitaBooth extends javax.swing.JFrame {
                                         .addGroup(panelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(txtTitle)
                                             .addGroup(panelFondoLayout.createSequentialGroup()
-                                                .addGroup(panelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(panelFondoLayout.createSequentialGroup()
-                                                        .addComponent(jLabel2)
-                                                        .addGap(26, 26, 26)
-                                                        .addComponent(campoNumB, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addGroup(panelFondoLayout.createSequentialGroup()
-                                                        .addComponent(btnIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGap(44, 44, 44)
-                                                        .addComponent(btnAtras)))
+                                                .addComponent(jLabel2)
+                                                .addGap(26, 26, 26)
+                                                .addComponent(campoNumB, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
-                                                .addGroup(panelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(btnAdelante)
-                                                    .addGroup(panelFondoLayout.createSequentialGroup()
-                                                        .addComponent(jLabel3)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                        .addComponent(campoNumBits1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))))))))
+                                                .addComponent(jLabel3)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(campoNumBits1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(panelFondoLayout.createSequentialGroup()
+                                                .addComponent(btnIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(44, 44, 44)
+                                                .addComponent(btnAtras)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(btnAdelante)))))))
                         .addGap(0, 71, Short.MAX_VALUE))
                     .addGroup(panelFondoLayout.createSequentialGroup()
                         .addGroup(panelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -252,11 +249,11 @@ public class VsitaBooth extends javax.swing.JFrame {
                     .addComponent(radioBtnStepbyStep)
                     .addComponent(radioBtn))
                 .addGap(18, 18, 18)
-                .addGroup(panelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(btnIniciar)
-                    .addComponent(btnAtras)
-                    .addComponent(btnAdelante))
-                .addGap(11, 11, 11)
+                    .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAdelante, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(13, 13, 13)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -278,6 +275,8 @@ public class VsitaBooth extends javax.swing.JFrame {
                     .addComponent(txt_Res_Decimal))
                 .addContainerGap(39, Short.MAX_VALUE))
         );
+
+        panelFondoLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnAdelante, btnAtras, btnIniciar});
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
